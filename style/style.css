@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800;900&family=Open+Sans:wght@600;700&family=Oswald:wght@300;600&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.wrapper {
+  font-family: "Roboto", sans-serif;
+}
+@media (max-width: 980px) {
+  .wrapper .header .container {
+    max-width: 780px;
+  }
+}
+.wrapper .header .container .header-contacts {
+  background-color: #3B3B3B;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 40px;
+  align-items: center;
+  font-size: 14px;
+  padding: 0 170px;
+}
+@media (max-width: 780px) {
+  .wrapper .header .container .header-contacts {
+    padding: 0;
+  }
+}
+.wrapper .header .container .header-contacts p {
+  color: white;
+  padding: 0 10px;
+}
+.wrapper .header .container .header-contacts a:link,
+.wrapper .header .container .header-contacts a:visited {
+  color: #D07358;
+  padding: 0 10px;
+}
+.wrapper .header .container .header-contacts .contacts-address {
+  padding: 5px 0;
+}
+.wrapper .header .container .header-contacts .contacts-number {
+  display: flex;
+  padding: 5px 0;
+}
+.wrapper .header .container .header-nav {
+  padding: 10px 170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 300;
+}
+@media (max-width: 780px) {
+  .wrapper .header .container .header-nav {
+    padding: 0 20px;
+  }
+}
+.wrapper .header .container .header-nav .nav-logo .logo-img {
+  max-width: 220px;
+  max-height: 50px;
+}
+.wrapper .header .container .header-nav .nav .nav-ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper .header .container .header-nav .nav .nav-ul .nav-li {
+  padding: 5px 15px;
+}
+.wrapper .header .container .header-nav .nav .nav-ul .nav-li a,
+.wrapper .header .container .header-nav .nav .nav-ul .nav-li a:visited {
+  color: black;
+}
+.wrapper .main .banner {
+  background-image: url(../img/background-img.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.wrapper .main .banner .container .banner-texts .banner-text {
+  font-size: 72px;
+  max-width: 200px;
+  padding: 110px 160px;
+  font-weight: 300;
+}
+.wrapper .main .about {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 135px;
+}
+.wrapper .main .about .about-texts {
+  font-size: 24px;
+}
+.wrapper .main .about .about-texts .about-title {
+  font-weight: 600;
+  line-height: 50px;
+}
+.wrapper .main .about .about-texts .about-text {
+  font-weight: 300;
+  color: #787878;
+  line-height: 30px;
+}/*# sourceMappingURL=style.css.map */
