@@ -96,12 +96,15 @@
 
             .container {
                 .banner-texts {
+                    max-width: 880px;
+                    padding: 60px;
 
                     .banner-text {
                         font-size: 72px;
-                        max-width: 200px;
+                        line-height: 80px;
                         padding: 110px 160px;
                         font-weight: 300;
+
                     }
                 }
             }
@@ -109,32 +112,87 @@
         }
 
         .about {
-            max-width: 700px;
+
             margin: 0 auto;
             text-align: center;
-            padding-top: 135px;
+            padding: 135px 0 135px;
 
             .about-texts {
                 font-size: 24px;
+                margin: 0 auto;
 
                 .about-title {
                     font-weight: 600;
-                    line-height: 50px;
+                    line-height: 35px;
+                    max-width: 390px;
+                    margin: 0 auto;
+                    padding-bottom: 30px;
                 }
 
                 .about-text {
+                    margin: 0 auto;
                     font-weight: 300;
                     color: #787878;
-                    line-height: 30px;
+                    line-height: 32px;
+                    max-width: 800px;
                 }
 
             }
 
-            .about-slider {}
+            .about-slider {
+                display: flex;
+                overflow: hidden;
+
+                .slider-img {
+                    padding: 5px;
+                    max-width: 100%;
+                    max-height: 95%;
+                    overflow: hidden;
+                }
+            }
 
 
+        }
 
+        .directions {
+            padding: 100px 0 100px;
+            background-color: #BDA082;
+            margin: 0 auto;
+            .directions-title {
+                text-align: center;
+                padding-bottom: 50px;
+                p {
+                    color: white;
+                    font-size: 38px;
+                    font-weight: 600;
+                }
 
+            }
+
+            .directions-sliders {
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .slider{
+                    max-width: 370px;
+                    max-height: 500px;
+                    margin: 10px;
+                    background-color: white;
+                    border-radius: 5px;
+                    img{
+                        max-width: 370px;
+                        border-radius: 5px;
+                    }
+
+                    .slider-content{
+                        padding: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        flex: 1 1 auto;
+                    }
+                }
+            }
         }
 
         .footer {}
