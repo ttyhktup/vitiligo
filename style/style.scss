@@ -120,6 +120,7 @@
             .about-texts {
                 font-size: 24px;
                 margin: 0 auto;
+                padding-bottom: 20px;
 
                 .about-title {
                     font-weight: 600;
@@ -141,13 +142,12 @@
 
             .about-slider {
                 display: flex;
-                overflow: hidden;
+                justify-content: center;
 
-                .slider-img {
-                    padding: 5px;
-                    max-width: 100%;
-                    max-height: 95%;
-                    overflow: hidden;
+                .about-img {
+                    margin: 10px;
+                    max-width: 400px;
+                    height: auto;
                 }
             }
 
@@ -158,9 +158,11 @@
             padding: 100px 0 100px;
             background-color: #BDA082;
             margin: 0 auto;
+
             .directions-title {
                 text-align: center;
                 padding-bottom: 50px;
+
                 p {
                     color: white;
                     font-size: 38px;
@@ -174,25 +176,135 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                .slider{
+                flex-wrap: wrap;
+
+                .slider {
                     max-width: 370px;
-                    max-height: 500px;
-                    margin: 10px;
+                    height: 730px;
+                    margin: 20px;
                     background-color: white;
                     border-radius: 5px;
-                    img{
-                        max-width: 370px;
-                        border-radius: 5px;
-                    }
 
-                    .slider-content{
-                        padding: 20px;
+                    .slider-img-content {
                         display: flex;
                         flex-direction: column;
                         flex: 1 1 auto;
+
+                        img {
+                            max-width: 100%;
+                            max-height: 350px;
+                            border-top-left-radius: 5px;
+                            border-top-right-radius: 5px;
+                        }
+
+                        .slider-content {
+                            padding: 20px 0 0 20px;
+                            display: flex;
+                            flex-direction: column;
+
+                            font-size: 19px;
+                            font-weight: 600;
+                            max-width: 250px;
+                            line-height: 25px;
+
+                            ul {
+                                font-size: 14px;
+                                padding: 15px 20px;
+
+                                li {
+                                    line-height: 20px;
+                                    font-weight: 300;
+                                }
+                            }
+                        }
+                    }
+
+
+                    .slider-buttons {
+                        padding: 15px;
+
+                        .button-about {
+                            height: 35px;
+                            width: 100px;
+                            border-radius: 5px;
+                            border: 1px solid black;
+                            font-size: 13px;
+                            font-weight: 600;
+                            color: white;
+                            background-color: black;
+                        }
+
+                        .button-contact {
+                            height: 35px;
+                            width: 100px;
+                            border-radius: 5px;
+                            border: 1px solid black;
+                            font-size: 13px;
+                            font-weight: 600;
+                            background-color: white;
+                        }
                     }
                 }
             }
+        }
+
+        .specialists {
+            background-color: #fff;
+            text-align: center;
+            margin: 0 auto;
+            padding: 100px;
+
+            .specialists-title {
+                margin: 50px;
+
+                p {
+                    font-size: 42px;
+                    font-weight: 600;
+                }
+            }
+
+            .specialists-specialists {
+                display: grid;
+                justify-content: center;
+                grid-column-gap: 40px;
+                grid-row-gap: 300px;
+                padding-top: 50px;
+                grid-template-columns: (minmax(200px, 360px)) minmax(200px, 360px) minmax(200px, 360px);
+                grid-template-rows: minmax(200px, 350px) minmax(200px, 350px);
+
+                .specialist {
+                    text-align: left;
+
+                    .specialist-img {
+                        img {
+                            max-width: 360px;
+                        }
+                    }
+
+                    .specialist-title {
+                        font-size: 22px;
+                        margin: 20px 0;
+                        line-height: 25px;
+                        font-weight: 600;
+                    }
+
+                    .line {
+                        content: "";
+                        color:#bda082 ; 
+                        max-width: 50px;
+                        width: 100%;
+                        height: 2px;
+                    }
+
+                    .specialist-description {
+                        font-size: 15px;
+                        margin: 20px 0;
+                        font-weight: 300;
+                        line-height: 23px;
+                    }
+                }
+            }
+
         }
 
         .footer {}
