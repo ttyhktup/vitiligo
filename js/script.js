@@ -13,13 +13,10 @@ new Swiper('.directions-container', {
         270:{
             slidesPerView: 1,
         },
-        480: {
-            slidesPerView: 1,
-        },
-        800: {
+        640: {
             slidesPerView: 2,
         },
-        1050: {
+        960: {
             slidesPerView: 3,
         },
     },
@@ -32,7 +29,7 @@ new Swiper('.results-slider', {
         nextEl: '.swiper-button-next',
     },
 
-    spaceBetween: 30,
+    spaceBetween: 10,
 
     slidesPerView: 3,
 
@@ -41,13 +38,11 @@ new Swiper('.results-slider', {
     speed: 600,
 
     breakpoints: {
-        270:{
+        300: {
             slidesPerView: 1,
         },
-        480: {
-            slidesPerView: 1,
-        },
-        800: {
+
+        640: {
             slidesPerView: 2,
         },
         1050: {
