@@ -13,7 +13,7 @@ new Swiper('.directions-container', {
         270:{
             slidesPerView: 1,
         },
-        640: {
+        770: {
             slidesPerView: 2,
         },
         960: {
@@ -51,6 +51,41 @@ new Swiper('.results-slider', {
     }
 });
 
+new Swiper('.mini-banner', {
+
+    spaceBetween: 0,
+
+    slidesPerView: 1,
+
+    loop: true,
+
+    speed: 600,
+
+});
+
+new Swiper('.nav-swiper',{
+    spaceBetween: 50,
+
+    slidesPerView: 4,
+
+    breakpoints: {
+        300: {
+            slidesPerView: 2.5,
+        },
+
+        460: {
+            slidesPerView: 3,
+        },
+
+        640: {
+            slidesPerView: 4,
+        },
+    },
+
+    loop: true,
+
+    speed: 600,
+});
 
 let active
 
