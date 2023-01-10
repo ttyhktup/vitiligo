@@ -21,7 +21,7 @@ html {
                 min-height: 40px;
                 align-items: center;
                 font-size: 14px;
-                padding: 0 350px;
+                padding: 0 10%;
 
                 @media (max-width:1325px) {
                     padding: 0 170px;
@@ -82,7 +82,7 @@ html {
             }
 
             .header-nav {
-                padding: 10px 350px;
+                padding: 5px 10%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -193,8 +193,8 @@ html {
     .main {
         .banner {
             max-width: 100%;
-            min-height: 700px;
-
+            // min-height: 700px;
+            
             @media (max-width:480px) {
                 display: none;
             }
@@ -206,19 +206,19 @@ html {
                 img {
                     width: 1325px;
                     width: 100%;
-                    height: 700px;
+                    height: 600px;
                     object-fit: cover;
                 }
 
                 .banner-texts {
-                    max-width: 23%;
+                    max-width: 29%;
                     position: absolute;
                     float: left;
                     top: 20%;
-                    left: 20%;
+                    left: 12%;
 
                     @media(max-width: 1325px) {
-                        top: 20%;
+                        top: 16%;
                         left: 10%;
                         max-width: 440px;
                         width: 100%;
