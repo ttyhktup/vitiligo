@@ -132,11 +132,11 @@ html {
   padding: 0 10px;
 }
 .wrapper .header .header-container .header-contacts .contacts-address {
-  padding: 5px 0;
+  padding: 5px 0 0;
 }
 .wrapper .header .header-container .header-contacts .contacts-number {
   display: flex;
-  padding: 5px 0;
+  padding: 5px 0 0;
 }
 @media (max-width: 768px) {
   .wrapper .header .nav-container {

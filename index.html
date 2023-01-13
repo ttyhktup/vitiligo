@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style/style.css">
   <link rel="shortcut icon" href="img/favicon.ico">
@@ -192,10 +195,37 @@
                 </div>
 
                 <div class="slider-buttons">
-                  <button class="button-about">Подробнее</button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Подробнее
+                  </button>
                   <button class="button-contact">Записаться</button>
                 </div>
+
+                <div class="modal" id="myModal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+
+                      <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+
+                      <div class="modal-body">
+                        Modal body..
+                      </div>
+
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
               </div>
+
+
+
             </div>
 
             <div class="slider swiper-slide">
