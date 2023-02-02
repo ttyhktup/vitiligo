@@ -25,7 +25,8 @@
           </div>
 
           <div class="contacts-number">
-            <a href="https://api.whatsapp.com/send/?phone=77024701111&text&type=phone_number&app_absent=0">+7 702 470 11
+            <a href="https://api.whatsapp.com/send/?phone=77024701111&text&type=phone_number&app_absent=0"
+              target="_blank">+7 702 470 11
               11</a>
             <p>пн-пт 09:00-20:00, сб 9:00-15:00</p>
           </div>
@@ -195,31 +196,10 @@
                 </div>
 
                 <div class="slider-buttons">
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                    Подробнее
+                  <button class="button-about"><a href="#popup1">Подробнее</a></button>
+                  <button class="button-contact"><a target="_blank"
+                      href="https://api.whatsapp.com/send/?phone=77024701111&text&type=phone_number&app_absent=0">Записаться</a>
                   </button>
-                  <button class="button-contact">Записаться</button>
-                </div>
-
-                <div class="modal" id="myModal">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-
-                      <div class="modal-header">
-                        <h4 class="modal-title">Modal Heading</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                      </div>
-
-                      <div class="modal-body">
-                        Modal body..
-                      </div>
-
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                      </div>
-
-                    </div>
-                  </div>
                 </div>
 
               </div>
@@ -250,8 +230,10 @@
 
 
                 <div class="slider-buttons">
-                  <button class="button-about">Подробнее</button>
-                  <button class="button-contact">Записаться</button>
+                  <button class="button-about"><a href="#popup2">Подробнее</a></button>
+                  <button class="button-contact"> <a target="_blank"
+                      href="https://api.whatsapp.com/send/?phone=77024701111&text&type=phone_number&app_absent=0">Записаться</a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -280,8 +262,10 @@
                 </div>
 
                 <div class="slider-buttons">
-                  <button class="button-about">Подробнее</button>
-                  <button class="button-contact">Записаться</button>
+                  <button class="button-about"><a href="#popup3">Подробнее</a></button>
+                  <button class="button-contact"> <a target="_blank"
+                      href="https://api.whatsapp.com/send/?phone=77024701111&text&type=phone_number&app_absent=0">Записаться</a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -597,6 +581,45 @@
           </div>
         </div>
       </div>
+
+      <div class="popup" id="popup1">
+        <a href="#directions" class="popup-area"></a>
+        <div class="popup-body">
+          <div class="popup-content">
+            <a href="#directions" class="close">X</a>
+            <div class="popup-title">Popup number One</div>
+            <div class="popup-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit
+              sunt, at ab harum iste quas molestiae commodi odio velit minima aut, quisquam accusamus
+              obcaecati nemo beatae quam impedit nobis?</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup" id="popup2">
+        <a href="#directions" class="popup-area"></a>
+        <div class="popup-body">
+          <div class="popup-content">
+            <a href="#directions" class="close">X</a>
+            <div class="popup-title">Popup number One</div>
+            <div class="popup-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit
+              sunt, at ab harum iste quas molestiae commodi odio velit minima aut, quisquam accusamus
+              obcaecati nemo beatae quam impedit nobis?</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup" id="popup3">
+        <a href="#directions" class="popup-area"></a>
+        <div class="popup-body">
+          <div class="popup-content">
+            <a href="#directions" class="close">X</a>
+            <div class="popup-title">Popup number One</div>
+            <div class="popup-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit
+              sunt, at ab harum iste quas molestiae commodi odio velit minima aut, quisquam accusamus
+              obcaecati nemo beatae quam impedit nobis?</div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
@@ -628,6 +651,8 @@
   </wrapper>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
+
+
 
 </body>
 

@@ -87,17 +87,6 @@ new Swiper('.nav-swiper',{
     speed: 600,
 });
 
-
-var myModal = document.getElementById('myModal')
-
-myModal.addEventListener('shown.bs.modal', function () {
-  myInput.focus()
-});
-
-
-
-
-
 let active
 
 Array.prototype.forEach.call(document.getElementsByClassName('price-list-item-title'), (el) => {
