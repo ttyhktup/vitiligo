@@ -292,6 +292,104 @@ html {
             }
         }
 
+        .news {
+            margin: 0 auto;
+            text-align: center;
+            padding: 50px 0 140px;
+            background-color: #5d5d5d;
+            @media(max-width: 1280px) {
+                padding: 50px;
+                font-size: 24px;
+            }
+
+            @media(max-width: 992px) {
+                padding: 30px;
+                font-size: 20px;
+                line-height: 10px;
+            }
+
+            .news-texts {
+                font-size: 24px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 50px;
+
+                @media(max-width: 1280px) {
+                    padding: 10px;
+                    font-size: 24px;
+                }
+
+                @media(max-width: 992px) {
+                    padding: 10px;
+                    font-size: 20px;
+                    line-height: 10px;
+                }
+
+                .news-title {
+                    font-weight: 600;
+                    line-height: 35px;
+                    max-width: 390px;
+                    padding-bottom: 30px;
+                    color: #d5d5d5;
+                }
+
+                .news-text {
+                    font-weight: 300;
+                    color: #bebebe;
+                    line-height: 32px;
+                    max-width: 800px;
+                }
+
+            }
+
+            .news-slider {
+                .news-elements {
+                    .news-slide {
+                        display: flex;
+                        justify-content: center;
+                        
+                        img {
+                            max-width: 400px;
+                            width: 100%;
+
+                            @media(max-width: 1280px) {
+                                max-width: 330px;
+                                width: 100%;
+                            }
+
+                            @media(max-width: 1192px) {
+                                max-width: 280px;
+                                width: 100%;
+                            }
+
+                            @media(max-width: 970px) {
+                                max-width: 270px;
+                                width: 100%;
+                            }
+
+                            @media (max-width:640px) {
+                                max-width: 270px;
+                                width: 100%;
+                            }
+
+                        }
+                    }
+                }
+
+                .swiper-button-next {
+                    color: white;
+                    right: 0;
+                }
+
+                .swiper-button-prev {
+                    color: white;
+                    left: 0;
+                }
+            }
+        }
+
         .about {
             margin: 0 auto;
             text-align: center;
@@ -994,7 +1092,7 @@ html {
             opacity: 0;
             visibility: hidden;
 
-            .popup-area{
+            .popup-area {
                 position: absolute;
                 width: 100%;
                 height: 100%;

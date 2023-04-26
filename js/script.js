@@ -87,6 +87,31 @@ new Swiper('.nav-swiper',{
     speed: 600,
 });
 
+new Swiper('.news-slider', {
+    navigation: {
+        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+    },
+    slidesPerView: 3,
+
+    loop: true,
+
+    speed: 600,
+
+    breakpoints: {
+        270:{
+            slidesPerView: 1,
+        },
+        700: {
+            slidesPerView: 2,
+        },
+        960: {
+            slidesPerView: 3,
+        },
+    },
+    
+});
+
 let active
 
 Array.prototype.forEach.call(document.getElementsByClassName('price-list-item-title'), (el) => {
